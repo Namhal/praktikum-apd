@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2509106056"/>
+        <attribute name="authors" value="bigmo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-24 07:43:44 AM"/>
+        <attribute name="created" value="YmlnbW87TkVSTzsyMDI1LTA5LTIzOzExOjIzOjAzIEFNOzIwOTY="/>
+        <attribute name="edited" value="YmlnbW87TkVSTzsyMDI1LTA5LTI0OzA3OjQzOjQ0IEFNOzI7MjIxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="suhu" type="Integer" array="True" size="6"/>
+            <declare name="f1, f2, k1, k2, r1, r2, jumlah, NIM, rata2" type="Real" array="False" size=""/>
+            <declare name="Bolean" type="Boolean" array="False" size=""/>
+            <assign variable="suhu[0]" expression="27"/>
+            <assign variable="suhu[1]" expression="33"/>
+            <assign variable="suhu[2]" expression="46"/>
+            <assign variable="suhu[3]" expression="55"/>
+            <assign variable="suhu[4]" expression="67"/>
+            <assign variable="suhu[5]" expression="92"/>
+            <assign variable="f1" expression="(9/5) * suhu[0] + 32"/>
+            <assign variable="f2" expression="(9/5) * suhu[1] + 32"/>
+            <assign variable="k1" expression="suhu[2] + 273.15"/>
+            <assign variable="k2" expression="suhu[3] + 273.15"/>
+            <assign variable="r1" expression="(4/5) * suhu[4]"/>
+            <assign variable="r2" expression="(4/5) * suhu[5]"/>
+            <assign variable="jumlah" expression="f1 + f2 + k1 + k2 + r1+ r2"/>
+            <assign variable="rata2" expression="jumlah / 6"/>
+            <assign variable="NIM" expression="56"/>
+            <assign variable="Bolean" expression="NIM &lt; rata2"/>
+            <output expression="&quot;List suhu dalam Celcius : (27, 33, 46, 55, 67, 92)&quot;" newline="True"/>
+            <output expression="&quot;Fahrenheit 1 : &quot;" newline="False"/>
+            <output expression="f1" newline="True"/>
+            <output expression="&quot;Fahrenheit 2 : &quot;" newline="False"/>
+            <output expression="f2" newline="True"/>
+            <output expression="&quot;Kelvin 1 : &quot;" newline="False"/>
+            <output expression="k1" newline="True"/>
+            <output expression="&quot;Kelvin 2 : &quot;" newline="False"/>
+            <output expression="k2" newline="True"/>
+            <output expression="&quot;Reamur 1 : &quot;" newline="False"/>
+            <output expression="r1" newline="True"/>
+            <output expression="&quot;Reamur 2 : &quot;" newline="False"/>
+            <output expression="r2" newline="True"/>
+            <output expression="&quot;Nim : &quot;" newline="False"/>
+            <output expression="NIM" newline="True"/>
+            <output expression="&quot;Bolean : &quot;" newline="False"/>
+            <output expression="Bolean" newline="True"/>
+            <output expression="&quot;Rata-rata : &quot;" newline="False"/>
+            <output expression="rata2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
