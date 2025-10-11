@@ -54,7 +54,7 @@ if login == True:
         print("3. GRAM KE KILOGRAM")
         print("4. MILIGRAM KE KILOGRAM")
         print("5. DEKAGRAM KE KILOGRAM")
-        rubah = input("PILIHAN : ")
+        rubah = float(input("PILIHAN : "))
         angka = float(input("Masukkan angka : "))
         if rubah == "1":
             hasil = angka * 0.453592
